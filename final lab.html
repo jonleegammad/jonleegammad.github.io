@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout with Image Transition</title>
+    <link rel="stylesheet" href="final lab ccss.css">
+    <style>
+        /* Style for dropdown and menu items */
+        
+    </style>
+</head>
+<body>
+
+<div class="layout">
+    <!-- Page Title -->
+    <div class="header">
+        Max Moto Hub   
+    </div>
+
+    <!-- Menu Section -->
+    <div class="menu">
+        <!-- Home Button -->
+        <a href="final lab.html" onclick="loadContent('final lab.html')"><button>Home</button></a>
+        <!-- About Us Button -->
+        <a href="about portfollio html.html" onclick="loadContent('about.html')"><button>About Us</button></a>
+
+        <!-- Shop Button with Dropdown -->
+        <div class="dropdown">
+            <button>Shop</button>
+            <div class="dropdown-content" id="shopDropdown">
+                <!-- Dropdown links to load specific content -->
+                <a href="product 1 main.html" onclick="loadContent('tires.html')">Tires</a>
+                <a href="rimset html.html" onclick="loadContent('rimset.html')">Rim set</a>
+                <a href="engine oil html.html" onclick="loadContent('engine-oil.html')">Engine oil</a>
+                <a href="shock.html" onclick="loadContent('shock.html')">Shock</a>
+                <a href="last product.html" onclick="loadContent('accessories.html')">Moto/Car parts</a>
+            </div>
+        </div>
+
+        <!-- Login Button -->
+        <a href="loginhtml.html" onclick="loadContent('loginhtml.html')"><button>Login</button></a>
+    </div>
+
+    <!-- Main Content Section with Margins -->
+    <div class="container">
+        <div class="margin"></div>
+
+        <div class="body">
+            <!-- Image Slider Section -->
+            <div id="sliderSection" class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="slide pictures/slide1.jfif" alt="Image 1"></div>
+                    <div class="slide"><img src="slide pictures/slide2.webp" alt="Image 2"></div>
+                    <div class="slide"><img src="slide pictures/slide 3.avif" alt="Image 3"></div>
+                    <div class="slide"><img src="slide pictures/slide4.jfif" alt="Image 4"></div>
+                    <div class="slide"><img src="slide pictures/slide 5.jfif" alt="Image 5"></div>
+                    <div class="slide"><img src="slide pictures/slide 6.webp" alt="Image 6"></div>
+                    <div class="slide"><img src="slide pictures/slide 7.jfif" alt="Image 7"></div>
+                    <div class="slide"><img src="slide pictures/slide 8.avif" alt="Image 8"></div>
+                    <div class="slide"><img src="slide pictures/slide9.jfif" alt="Image 9"></div>
+                    <div class="slide"><img src="slide pictures/slide 10.png" alt="Image 10"></div>
+                </div>
+            </div>
+            <!-- End of Image Slider Section -->
+
+            <!-- Content Area for Dynamic Content -->
+            <div id="contentArea" class="content-area">
+                <!-- Content will be loaded here based on button clicks -->
+                
+            </div>
+        </div>
+
+        <div class="margin"></div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        &copy; 2024 Max Moto Hub. All rights reserved.
+    </div>
+</div>
+
+<!-- JavaScript for Loading Content -->
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Message</title>
+    <style>
+        /* Background image styling */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image:url("backround for hyperlink.webp"); /* Replace with your image URL or file path */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Styling for the hyperlink */
+        .welcome-link {
+            display: block;
+            text-align: center;
+            padding: 20px;
+            font-size: 20px;
+            text-decoration: none;
+            color: white; /* Text color */
+            background: linear-gradient(45deg, blue, red, gray, black, white);
+            background-size: 400%;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: background-position 0.5s ease, transform 0.2s ease;
+            width: fit-content;
+        }
+
+        /* Hover effect */
+        .welcome-link:hover {
+            background-position: 100%; /* Animate gradient */
+            transform: scale(1.05); /* Slightly enlarge */
+        }
+    </style>
+</head>
+<body>
+    <!-- Centered hyperlink with background -->
+    <a href="final lab.html" class="welcome-link">
+        Hello dear customers! Welcome to Max Moto Hub.<br>
+        You're free to shop online. Enjoy!<br>
+        <strong>Just click here</strong>
+    </a>
+</body>
+</html>

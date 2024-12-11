@@ -1,0 +1,179 @@
+/* General Body Style */
+body {
+    background-image: url("tires picture/789.jpg"); /* Background image */
+    background-size: cover; /* Ensure the image covers the entire screen */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repeating the background image */
+    color: white; /* White text color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header with Back Button and Description Box */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.0); /* Semi-transparent background */
+    z-index: 100;
+}
+
+.back-button {
+    background-color: #e74c3c; /* Red background */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.back-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+.description-box {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for description */
+    color: white;
+    padding: 10px;
+    max-width: 300px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* 3D Image Display Container */
+.product-3d-container {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 270px; /* Set a small width for the 3D image */
+    height: auto;
+    z-index: 10; /* To ensure it's on top of other content */
+}
+
+.product-3d {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transform: rotateY(0deg); /* Initial rotation for 3D effect */
+    animation: rotate 5s infinite linear; /* Rotation animation */
+}
+
+/* 3D Rotation Animation */
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+/* Product Container */
+.product-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow the products to wrap into multiple rows */
+    justify-content: space-between;
+    padding: 15px; /* Reduced padding */
+    margin-top: 300px; /* Add space at the top to move products down */
+}
+
+/* Product Cards */
+.product {
+    background-color: #0B2640; /* Dark grey background */
+    color: white;
+    width: 18%; /* Adjust width to fit 5 products in each row */
+    height: 250px; /* Set a fixed height */
+    margin-right: 10px; /* Space between products */
+    padding: 8px; /* Padding inside the product */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 20px; /* Adjust the margin to provide space between rows */
+    display: flex; /* Align content */
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.product img {
+    width: 50%; /* Reduced image size */
+    height: auto;
+    border-radius: 10px;
+}
+
+.product h3 {
+    margin: 8px 0; /* Reduced margin */
+    color: #3498db; /* Blue text for product name */
+}
+
+.product p {
+    margin: 4px 0; /* Reduced margin */
+}
+
+.product p:last-child {
+    color: #f1c40f; /* Yellow price color */
+}
+
+/* Buttons Style */
+.product-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px; /* Reduced margin */
+}
+
+.buy-button, .add-to-cart, .about-product {
+    background-color: #e74c3c; /* Red button color */
+    color: white;
+    padding: 8px 10px; /* Smaller padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 28%; /* Reduced width */
+    margin-right: 5px; /* Add space between buttons */
+    display: inline-block; /* Ensure buttons stay inline */
+}
+
+.buy-button:last-child, .add-to-cart:last-child, .about-product:last-child {
+    margin-right: 0; /* Remove margin from the last button */
+}
+
+
+
+.buy-button:hover, .add-to-cart:hover, .about-product:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .product {
+        width: 18%; /* Ensures that only 5 items fit in the row */
+    }
+}
+
+@media (max-width: 768px) {
+    .product {
+        width: 45%; /* Wider products for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        width: 90%; /* Larger products for very small screens */
+    }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Class Schedule</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Roboto', sans-serif; /* Updated font */
+            background-color: #f4f4f4;
+        }
+        h2 {
+            margin-top: 0;
+            color: red; /* Change the heading color to red */
+            font-weight: 700; /* Bold font for the heading */
+        }
+        table {
+            width: 90%;
+            max-width: 800px;
+            border-collapse: collapse;
+            font-size: 16px;
+            text-align: center;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: 700; /* Bold font for table headers */
+        }
+        .subject {
+            background-color: #d1ecf1; /* Background color for cells with subjects */
+        }
+        @media (max-width: 768px) {
+            table {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h2>My Class Schedule</h2>
+
+<table>
+    <tr>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+    </tr>
+    <tr>
+        <td>7:00 - 7:30</td>
+        <td></td>
+        <td rowspan="2" class="subject">IT 312<br>Dr. Ferreria<br>Mr<br>Lec</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>8:00 - 10:00</td>
+        <td class="subject">IT 311<br>Domingo S.<br>Mr<br>Lec</td>
+        <td></td>
+        <td rowspan="2" class="subject">IT Elect 2<br>Dr. Antonio Rocha<br>Mph<br>Lec</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>10:30 - 12:00</td>
+        <td class="subject">IT 312<br>Dr. Ferreria<br>Mr<br>Lec</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>11:00 - 12:00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="subject">IT Ins3<br>Math Instructor<br>Mr<br>Lec</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>12:00 - 1:00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>1:00 - 2:00</td>
+        <td></td>
+        <td rowspan="3" class="subject">IT Ins3<br>Math Instructor<br>Mr<br>Lab</td>
+        <td></td>
+        <td rowspan="2" class="subject">IT Elect 2<br>Dr. Antonio Rocha<br>Mph<br>Lab</td>
+        <td rowspan="3" class="subject">IT 311<br>Domingo S.<br>Mr<br>Lec</td>
+    </tr>
+    <tr>
+        <td>2:00 - 3:00</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>3:00 - 4:00</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>4:00 - 5:00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+</body>
+</html>

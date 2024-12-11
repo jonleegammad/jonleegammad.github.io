@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <!-- Back Button -->
+  <button class="back-button" onclick="goBack()">Back</button>
+
+  <div class="container">
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+
+    <!-- Contact Button -->
+    <button class="contact-btn" onclick="toggleModal()">Contact Us</button>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="toggleModal()">&times;</span>
+        <h2>Contact Us</h2>
+        
+        <!-- Contact Information -->
+        <div class="contact-info">
+          <p><strong>Email:</strong> <a href="mailto:mark.gammad@gmail.com">mark.gammad@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+1234567890">099-25589-226</a></p>
+          <p><strong>Address:</strong> Payac Jones Isabela</p>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-links">
+          <a href="#" class="social-icon facebook">Facebook</a>
+          <a href="#" class="social-icon instagram">Instagram</a>
+          <a href="#" class="social-icon twitter">Twitter</a>
+          <a href="#" class="social-icon youtube">YouTube</a>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" action="#" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Max Moto Hub. All rights reserved.</p>
+  </footer>
+
+  <script src="contact.js"></script>
+</body>
+</html>

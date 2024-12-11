@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.info-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: left; /* Text inside is aligned left */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-picture {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px; /* Space between the label and value */
+    row-gap: 10px; /* Space between rows */
+}
+
+.info p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.info p strong {
+    display: inline-block;
+    width: 120px; /* Fixed width for labels to align them */
+}
